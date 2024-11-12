@@ -18,8 +18,10 @@ En la carpeta colab encontrarás los archivos necesarios para ejecutar todos los
 1. Copia los archivos pacman.py y pacai.py en la carpeta content en Colab.  
 2. En la carpeta content, crea una subcarpeta llamada images y replica la estructura de la carpeta images original y sube todos los archivos de images por carpeta(directorio).  
 
-![imagen1estructuracontent](/readme1imagen.png)
-![imagen2estructuracontent](/readme2imagen.png)
+![imagen1estructuracontent](/readme1imagen.png)  
+![imagen2estructuracontent](/readme2imagen.png)  
+
+
 En Colab, puedes ejecutar todos los individuos de la generación en paralelo, con un máximo recomendado de 120, o preferiblemente de 100 o menos, caso contrario se cuelga en varias ocasiones.  
 
 3. En Colab, no cambies los nombres de los archivos ni la estructura de carpetas, ya que pacman.py hace un import pacai as ga, por lo cual si se cambia el nombre a pacai y pacman por conveniencia porfavor cambiar los imports de los archivos asi se ejecuta de forma correcta.  
