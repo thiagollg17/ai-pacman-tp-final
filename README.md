@@ -36,4 +36,10 @@ En Colab, puedes ejecutar todos los individuos de la generación en paralelo, co
 **Ejecucion en Google Colab paralelo (con rejection sampling)**  
 1. Carpeta rejection_sample: Esta carpeta contiene una implementación que usa el método de rejection sampling. En esta versión, solo consta del archivo pacai.py ya que se utiliza el mismo archivo pacman.py de la carpeta colab (el anteriormente mencionado para colab con mating pool)  
 2. En colab no reemplaze el pacman.py ya que se usa el mismo que el de mating pool del anterior punto. Solo reemplaze el pacai por el de esta carpeta. Ejecute !python pacai.py. Nuevamente la logica del metodo esta en el pacai y no en el pacman.py (este calcula solo fitness)
-3. Recuerde no cambiar el nombre de los archivos. Si lo quiere hacer por conveniencia cambie los imports internos asi coinciden.
+3. Recuerde no cambiar el nombre de los archivos. Si lo quiere hacer por conveniencia cambie los imports internos asi coinciden.  
+
+Nota> los archivos para el colab pueden ejecutarse sin problema en entorno local solo dependera de los recursos de la maquina. Si no necesita graficarlos recomendable hasta 15 individuos (y como mucho). Si desea graficarlos para poder ver como corren todos la cant de individuos estables maximo 10. Para graficarlos hay que hacer algunos cambios ya que en colab es obligatorio desactivar la parte grafica. En el pacman.py **descomentar** el ultimo bloque entero del archivo que esta entre comillas simples, y en el pacai.py  **comentar** las siguientes lineas  
+
+os.environ["SDL_VIDEODRIVER"] = "dummy"  # Desactiva el video  
+os.environ["SDL_AUDIODRIVER"] = "dummy"  # Desactiva el audio  
+    
